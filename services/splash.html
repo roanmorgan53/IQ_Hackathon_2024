@@ -15,6 +15,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+<style>
+
+    h1, h2, form {
+        padding: 5px 50px;
+    }
+
+    fieldset {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    input {
+        margin: 1%;
+    }
+
+    textarea {
+        width: 500px;
+        height: 150px;
+    }
+    #email, #label-email {
+        margin: 0% 2.1%
+    }
+
+    table, th, td {
+        border: 5px solid blue;
+        padding: 10px;
+    }
+
+    table {
+        text-align: center;
+    }
+</style>
+
 <body>
     <div id="preloader">
         <div id="loader"></div>
@@ -23,22 +56,143 @@
     <div id="splash" class="animated-splash">
         <div class="curtain">
             <div class="splash-content">
-                Welcome! Please sign in!
+                <h1>Welcome! Please sign in!</h1>
                 <form id="form">
+
                     <fieldset class="form-control">
-                        <legend>Name</legend>
-                        <label for="name" id="label-name">
-                            What did you have for breakfast? </label><br><br>
-                        <input type="text" id="name" placeholder="Enter food name"><br>
-                        <input type="text" id="name" placeholder="Enter food name"><br>
-                        <input type="text" id="name" placeholder="Enter food name"><br><br>
+                        <legend>Personal information</legend><br>
+                        <label for="firstname" id="label-first-name">
+                            First name: </label>
+                        <input type="text" id="first-name" placeholder="Enter your first name"><br><br>
+                        <label for="lastname" id="label-last-name">
+                            Last name: </label>
+                        <input type="text" id="last-name" placeholder="Enter your last name"><br><br>
+                        <label for="email" id="label-email">
+                            Email: </label>
+                        <input type="text" id="email" placeholder="Enter your email address"><br><br>
                     </fieldset>
+
+                    <fieldset class="form-control">
+                        <legend>Goals</legend><br>
+                        <label for="firstname" id="nut-goals">
+                            Please describe your nutrition goals: </label><br><br>
+                        <textarea type="textbox" id="nut-goals" placeholder="Type text here"></textarea><br><br>
+                        <label for="firstname" id="fit-goals">
+                            Please describe your fitness goals: </label><br><br>
+                        <textarea type="textbox" id="fit-goals" placeholder="Type text here" width="500px"></textarea><br><br>
+                    </fieldset>
+
+                    <fieldset class="form-control">
+                        <legend>Submit</legend>
+                        <label>
+                            Click to submit. </label><br><br>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+
                 </form>
             </div>
         
         <div class="additional-splash-effects"></div>
     </div>
 
+    <div id="content" > style="display: none;"
+        <div class="card">
+            <h2>Great! Now we need a little more info.</h2>>
+            <form>
+                <fieldset>
+                    <legend>
+                        Pop-up goals
+                    </legend>
+                    <label>How many times a week would you say you eat vegetables, fruits, grains, protein?</label><br><br>
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>Vegetables</th>
+                                <th>Fruits</th>
+                                <th>Grains</th>
+                                <th>Beans and Legumes</th>
+                                <th>Nuts and Seeds</th>
+                                <th>Meat and Poultry</th>
+                                <th>Seafood</th>
+                                <th>Dairy</th>
+                            </tr>
+
+                            <tr>
+                                <td><input type="hidden" id="Id" name="id[]" value="veg"></
+                                <label>None</label></td><br>
+
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                            </tr>
+
+                            <tr>
+                                <input type="hidden" id="Id" name="id[]" value="">
+                                <td><label>A few times a week</label></td>
+
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+
+                            </tr>
+
+                            <tr>
+                                <input type="hidden" id="Id" name="id[]" value="">
+                                <td><label>Once a month</label></td>
+
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                            </tr>
+
+                            <tr>
+                                <input type="hidden" id="Id" name="id[]" value="">
+                                <td><label>Once a year</label></td>
+
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                                <td><input type="checkbox" name="select" id="checkbox"></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </fieldset>
+
+                <fieldset class="form-control">
+                    <legend>Submit</legend>
+                    <label>
+                        Please click to submit. </label><br><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
+
+<!-- <script src=""></script>
+<script src=".js"></script> -->
 
 </body>
 
