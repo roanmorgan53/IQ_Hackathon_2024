@@ -5,8 +5,8 @@
     font-family: "Nunito Sans", sans-serif;
 }
 body {
-    background: #F4F4F4;
-    /*min-height: 800px;*/
+    min-height: 800px;
+    background: linear-gradient(180deg, #F4F4F4 90%, #A4BD00);
 }
 
 #navbar {
@@ -26,8 +26,13 @@ body {
     filter: drop-shadow(0px -5px 10px #3066BE)
 }
 
-#navbar h1 {
-    
+#navbar img {
+    display: inline-block;
+    width: 140px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
 }
 
 #navbar a {
@@ -43,15 +48,47 @@ body {
     /* border: 1px solid blue; */
 }
 
-#content-box {
+#content-text{
     display: inline-block;
-    width: 80%;
+    width: 69%;
     min-width: 600px;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 80px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20px;
+}
+
+#content-box {
     background-color: #F4F4F4;
-    box-shadow: 0px 0px 10px #3066BE;
+    border: 2px solid #A4BD00;
     border-radius: 10px;
     padding: 10px;
+}
+
+#content-box p {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: #A4BD00;
+    color: white;
+    text-align: left;
+    box-shadow: 0px 0px 16px #A4BD00;
+}
+
+#coin {
+    display: inline-block;
+    width:20px;
+    height: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.top-element {
+    margin-top: 80px;
 }
