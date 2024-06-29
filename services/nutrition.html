@@ -73,6 +73,15 @@
         // append the elt in page (in span).
         foo.appendChild(element);
     }
+
+    // print thank you message
+    const message = 'You have submitted your food diary. Congratulations on earning 100 pts!'
+
+    document.getElementById('printButton').onclick = function() {
+        document.getElementById('printHere').innerHTML = message;
+
+        console.log(message)
+    };
 </script>
 
 
@@ -132,6 +141,10 @@
         }*/
 
     </style>    
+>>>>>>> 6dc1a47950b453c0431cb3fddb3f14f6f9f0318b
+
+    <div id="content-box">
+        <br><br><br><br>
 
     <div class="top-element bottom-element" id="content-text">
         <h1>Food survey</h1>
@@ -197,6 +210,8 @@
             </form>
         </div>
     </div>
+
+    
 
     <div id="footer">
         <footer>
