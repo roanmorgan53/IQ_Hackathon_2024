@@ -12,6 +12,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+<!-- Cite: https://www.viralpatel.net/dynamic-add-textbox-input-button-radio-element-html-javascript/ -->
+<script language="javascript">
+    function add1(type) {
+        // create input type dynamically
+        var element = document.createElement("input");
+
+        // set attribute to elt
+        element.setAttribute("type", type);
+        // element.setAttribute("value", type);
+        // element.setAttribute("name", type);
+
+        var foo = document.getElementById("fooBar1");
+
+        // append the elt in page (in span).
+        foo.appendChild(element);
+    }
+
+    function add2(type) {
+        // create input type dynamically
+        var element = document.createElement("input");
+
+        // set attribute to elt
+        element.setAttribute("type", type);
+        // element.setAttribute("value", type);
+        // element.setAttribute("name", type);
+
+        var foo = document.getElementById("fooBar2");
+
+        // append the elt in page (in span).
+        foo.appendChild(element);
+    }
+
+    function add3(type) {
+        // create input type dynamically
+        var element = document.createElement("input");
+
+        // set attribute to elt
+        element.setAttribute("type", type);
+        // element.setAttribute("value", type);
+        // element.setAttribute("name", type);
+
+        var foo = document.getElementById("fooBar3");
+
+        // append the elt in page (in span).
+        foo.appendChild(element);
+    }
+
+    function add4(type) {
+        // create input type dynamically
+        var element = document.createElement("input");
+
+        // set attribute to elt
+        element.setAttribute("type", type);
+        // element.setAttribute("value", type);
+        // element.setAttribute("name", type);
+
+        var foo = document.getElementById("fooBar4");
+
+        // append the elt in page (in span).
+        foo.appendChild(element);
+    }
+</script>
+
+
 <body>
     
     <div id="navbar">
@@ -54,7 +118,21 @@
                 What did you have for breakfast? </label><br><br>
             <input type="text" id="name" placeholder="Enter food name"><br>
             <input type="text" id="name" placeholder="Enter food name"><br>
-            <input type="text" id="name" placeholder="Enter food name"><br><br>
+            <input type="name" id="name" placeholder="Enter food name" name="element">
+
+            <!-- <input > -->
+            
+            
+            <!-- <option value="text"></option> -->
+            <!-- <select name="element">
+                <OPTION value="button">Button</OPTION>
+                <OPTION value="text">Textbox</OPTION>
+                <OPTION value="radio">Radio</OPTION>
+            </select> -->
+            
+            <span id="fooBar1">&nbsp;</span><br><br>
+            <input type="button" value="Add textbox" onclick="add1(document.forms[0].element.value)"/>
+            
         </fieldset>
 
         <fieldset class="form-control">
@@ -63,7 +141,10 @@
                 What did you have for lunch?</label><br><br>
             <input type="text" id="name" placeholder="Enter food name"><br>
             <input type="text" id="name" placeholder="Enter food name"><br>
-            <input type="text" id="name" placeholder="Enter food name"><br><br>
+            <input type="name" id="name" placeholder="Enter food name" name="element">
+
+            <span id="fooBar2">&nbsp;</span><br><br>
+            <input type="button" value="Add textbox" onclick="add2(document.forms[0].element.value)"/>
         </fieldset>
 
         <fieldset class="form-control">
@@ -72,7 +153,10 @@
                 What did you have for dinner?</label><br><br>
             <input type="text" id="name" placeholder="Enter food name"><br>
             <input type="text" id="name" placeholder="Enter food name"><br>
-            <input type="text" id="name" placeholder="Enter food name"><br><br>
+            <input type="text" id="name" placeholder="Enter food name">
+
+            <span id="fooBar3">&nbsp;</span><br><br>
+            <input type="button" value="Add textbox" onclick="add3(document.forms[0].element.value)"/>
         </fieldset>
 
         <fieldset class="form-control">
@@ -81,7 +165,10 @@
                 List any snacks here. </label><br><br>
             <input type="text" id="name" placeholder="Enter food name"><br>
             <input type="text" id="name" placeholder="Enter food name"><br>
-            <input type="text" id="name" placeholder="Enter food name"><br><br>
+            <input type="text" id="name" placeholder="Enter food name">
+
+            <span id="fooBar4">&nbsp;</span><br><br>
+            <input type="button" value="Add textbox" onclick="add4(document.forms[0].element.value)"/>
         </fieldset>
 
         <fieldset class="form-control">
