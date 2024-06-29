@@ -107,6 +107,10 @@ body {
     box-shadow: 0px 0px 16px #A4BD00;
 }
 
+#footer p {
+    display: inline-block;
+}
+
 #coin {
     display: inline-block;
     width:20px;
