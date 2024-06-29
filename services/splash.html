@@ -58,7 +58,7 @@
         <div class="curtain">
             <div class="splash-content">
                 <h1 class="animated-title">Welcome! Please sign in!</h1>
-                <form id="form">
+                <form id="form" onsubmit="return doThis()">
 
                     <fieldset class="form-control">
                         <legend>Personal information</legend><br>
@@ -87,7 +87,7 @@
                         <legend>Submit</legend>
                         <label>
                             Click to submit. </label><br><br>
-                        <button type="submit" value="Submit" onclick="">
+                        <button id="button1" type="submit" value="Submit" onclick="submitBtn()">Submit</button>
                     </fieldset>
 
                 </form>
@@ -96,104 +96,14 @@
         </div>
     </div>
 
-    <div id="content" style="display: none;">
-        <div class="card">
-            <h2>Great! Now we need a little more info.</h2>>
-            <form>
-                <fieldset>
-                    <legend>
-                        Pop-up goals
-                    </legend>
-                    <label>How many times a week would you say you eat vegetables, fruits, grains, protein?</label><br><br>
-
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th></th>
-                                <th>Vegetables</th>
-                                <th>Fruits</th>
-                                <th>Grains</th>
-                                <th>Beans and Legumes</th>
-                                <th>Nuts and Seeds</th>
-                                <th>Meat and Poultry</th>
-                                <th>Seafood</th>
-                                <th>Dairy</th>
-                            </tr>
-
-                            <tr>
-                                <td><input type="hidden" id="Id" name="id[]" value="veg"></
-                                <label>None</label></td><br>
-
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                            </tr>
-
-                            <tr>
-                                <input type="hidden" id="Id" name="id[]" value="">
-                                <td><label>A few times a week</label></td>
-
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-
-                            </tr>
-
-                            <tr>
-                                <input type="hidden" id="Id" name="id[]" value="">
-                                <td><label>Once a month</label></td>
-
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                            </tr>
-
-                            <tr>
-                                <input type="hidden" id="Id" name="id[]" value="">
-                                <td><label>Once a year</label></td>
-
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                                <td><input type="checkbox" name="select" id="checkbox"></td>
-                            </tr>
-                            
-                        </tbody>
-                    </table>
-                </fieldset>
-
-                <fieldset class="form-control">
-                    <legend>Submit</legend>
-                    <label>
-                        Please click to submit. </label><br><br>
-                    <input type="submit" value="Submit">
-                </fieldset>
-
-            </form>
-        </div>
-    </div>
-
 <script src="https://cdn.jsdelivr.net/npm/splash-screen@4.0.1/dist/splash-screen.min.js"></script>
-<script src="java_splash.js"></script>
+<!-- <script src="java_splash.js"></script> -->
+
+<script lang="javascript">
+    function submitBtn() {
+        location.href = "./services/splash2.html"
+    };
+</script>
 
 </body>
 
