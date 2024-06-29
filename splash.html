@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>SALUDUS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        form {
+            background-color: #F4F4F4;
+            border: 2px solid #A4BD00;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+
+        input {
+            background-color: #F4F4F4;
+            border: 2px solid #A4BD00;
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 100%;
+            height: 50px;
+            font-weight: 600;
+            font-size: large;
+
+        }
+
+        input:hover {
+            cursor: pointer;
+        }
+
+        /*h2, form {
+            padding: 5px 50px;
+            
+        }*/
+
+        fieldset {
+            margin: 10px;
+            padding: 10px;
+            border: solid #A4BD00;
+            box-shadow: 0px 0px 5px #3066BE;
+        }
+
+        label {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        /*input {
+            margin: 1%;
+        }*/
+
+   
+        h2, form {
+            padding: 5px 50px;
+            
+        }
+
+        fieldset {
+            margin: 10px;
+            padding: 10px;
+            border: solid #A4BD00;
+        }
+        input {
+            margin: 1%;
+        }
+
+    textarea {
+        width: 350px;
+        height: 150px;
+    }
+    #email, #label-email {
+        margin: 0% 1%
+    }
+
+    table, th, td {
+        border: 5px solid blue;
+        padding: 10px;
+    }
+
+    table {
+        text-align: center;
+    }
+</style>
+
+
+<body>
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+    <div id="splash" class="animated-splash">
+        <div class="curtain">
+            <div class="splash-content">
+                <h1 class="animated-title">Welcome! Please sign in!</h1>
+                <form id="form" onsubmit="return doThis()">
+
+                    <fieldset class="form-control">
+                        <legend>Personal information</legend><br>
+                        <label for="firstname" id="label-first-name">
+                            First name: </label>
+                        <input type="text" id="first-name" placeholder="Enter your first name"><br><br>
+                        <label for="lastname" id="label-last-name">
+                            Last name: </label>
+                        <input type="text" id="last-name" placeholder="Enter your last name"><br><br>
+                        <label for="email" id="label-email">
+                            Email: </label>
+                        <input type="text" id="email" placeholder="Enter your email address"><br><br>
+                    </fieldset>
+
+                    <fieldset class="form-control">
+                        <legend>Goals</legend><br>
+                        <label for="firstname" id="nut-goals">
+                            Please describe your nutrition goals: </label><br><br>
+                        <textarea type="textbox" id="nut-goals" placeholder="Type text here"></textarea><br><br>
+                        <label for="firstname" id="fit-goals">
+                            Please describe your fitness goals: </label><br><br>
+                        <textarea type="textbox" id="fit-goals" placeholder="Type text here" width="500px"></textarea><br><br>
+                    </fieldset>
+
+                    <fieldset class="form-control">
+                        <legend>Submit</legend>
+                        <label>
+                            Click to submit. </label><br><br>
+                        <button id="button1" type="submit" value="Submit"><a href="splash2.html">Submit</a></button>
+                    </fieldset>
+
+                </form>
+                <div class="additional-splash-effects"></div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/splash-screen@4.0.1/dist/splash-screen.min.js"></script>
+<!-- <script src="java_splash.js"></script> -->
+
+<!-- <script lang="javascript">
+    function submitBtn() {
+        window.location.href = "./services/splash2.html"
+    };
+</script> -->
+
+</body>
+
+</html>

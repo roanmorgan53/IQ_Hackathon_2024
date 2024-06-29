@@ -77,13 +77,13 @@
     }
 
     // print thank you message
-    const message = 'You have submitted your food diary. Congratulations on earning 100 pts!'
+    // const message = 'You have submitted your food diary. Congratulations on earning 100 pts!'
 
-    document.getElementById('printButton').onclick = function() {
-        document.getElementById('printHere').innerHTML = message;
+    // document.getElementById('printButton').onclick = function() {
+    //     document.getElementById('printHere').innerHTML = message;
 
-        console.log(message)
-    };
+    //     console.log(message)
+    // };
 </script>
 
 
@@ -119,6 +119,10 @@
             font-weight: 600;
             font-size: large;
 
+        }
+
+        input:hover {
+            cursor: pointer;
         }
 
         /*h2, form {
@@ -203,11 +207,12 @@
         
                 <fieldset class="form-control">
                     <label>Click to submit your daily food diary.<span><img id="coin" src="../images/coin.png">100</span> </label><br><br>
-                    <input type="submit" value="Submit">
+                    <input id="printButton" type="submit" value="Submit" onclick="getElementById('message').innerHTML='You have submitted your food diary. Congratulations on earning 100 pts!';"></input>
                 </fieldset>
-        
             </form>
+            <p id = 'message'></p>
         </div>
+        
     </div>
 
     <div id="footer">
