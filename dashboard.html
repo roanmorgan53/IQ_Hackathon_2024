@@ -3,7 +3,11 @@
 <html>
 
 <head>
-    <title>SALUDUS</title>
+    <title>
+        SALUDUS
+    </title>
+
+    <link rel="icon" href="./images/manzana.png"> 
     <link rel="stylesheet" type="text/css" href="styles.css">
 
     <!-- FONT -->
@@ -28,17 +32,24 @@
             <a href="./services/splash.html">Splash</a>
         </nav>
     </div>
-    <div class="top-element" id="content-text">
+
+    <div class="top-element no-padding" id="content-text">
+        <h1>Welcome, User!</h1>
+        <hr>
+        <img id="weekly-progress" src="./images/weekly_progress.png">
+    </div>
+
+    <div id="content-text">
         <h1>Day in Review</h1>
         <div id="content-box">
             <p>You logged some meals 😎😎<span><img id="coin" src="./images/coin.png">100</span></p>
         </div>
     </div>
 
-    <div id="content-text">
+    <div class="bottom-element" id="content-text">
         <h1>Daily Quest</h1>
-        <div id="content-box">
-            <p>Watch some videos for coins! 💵📺👀</p>
+        <div id="content-box" class="video">
+            <p>Watch a video for coins! 💵📺👀<span><img id="coin" src="./images/coin.png">200</span></p>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/kcBpFu4cuBA?si=liPmvyTZ5k8vc7bm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
