@@ -76,7 +76,7 @@ body {
     padding: 10px;
 }
 
-#content-box p {
+#content-box p, #content-box h4 {
     display: flex;
     justify-content: space-between;
 }
@@ -109,6 +109,10 @@ body {
 
 #footer p {
     display: inline-block;
+    color: #F4F4F4;
+    background-color: #192812e6;
+    padding: 5px;
+    filter: drop-shadow(0px 0px 2px black)  
 }
 
 #coin {
