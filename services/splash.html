@@ -35,7 +35,7 @@
         height: 150px;
     }
     #email, #label-email {
-        margin: 0% 1.7%
+        margin: 0% 1%
     }
 
     table, th, td {
@@ -46,27 +46,8 @@
     table {
         text-align: center;
     }
-
-    
 </style>
 
-<!-- <script language="javascript">
-    document.addEventListener("DOMContentLoaded",
-    function () {
-        setTimeout(function () {
-            document.getElementById("preloader")
-            .style.display = "none";
-            setTimeout(function ()
-        {
-            document.getElementById("splash")
-            .style.display = "none";
-            document.getElementById("content")
-            .style.display = "block";
-            addLiveAnimations();
-        }, 3000);
-    }, 1000);
-});
-</script> -->
 
 <body>
     <div id="preloader">
@@ -76,7 +57,7 @@
     <div id="splash" class="animated-splash">
         <div class="curtain">
             <div class="splash-content">
-                <h1>Welcome! Please sign in!</h1>
+                <h1 class="animated-title">Welcome! Please sign in!</h1>
                 <form id="form">
 
                     <fieldset class="form-control">
@@ -106,16 +87,16 @@
                         <legend>Submit</legend>
                         <label>
                             Click to submit. </label><br><br>
-                        <input type="submit" value="Submit">
+                        <button type="submit" value="Submit" onclick="">
                     </fieldset>
 
                 </form>
+                <div class="additional-splash-effects"></div>
             </div>
-        
-        <div class="additional-splash-effects"></div>
+        </div>
     </div>
 
-    <div id="content" > style="display: none;"
+    <div id="content" style="display: none;">
         <div class="card">
             <h2>Great! Now we need a little more info.</h2>>
             <form>
@@ -211,8 +192,8 @@
         </div>
     </div>
 
-<!-- <script src=""></script>
-<script src=".js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/splash-screen@4.0.1/dist/splash-screen.min.js"></script>
+<script src="java_splash.js"></script>
 
 </body>
 
